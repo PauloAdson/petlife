@@ -174,7 +174,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url("/src/assets/img/start-img.svg");
+        background-image: url("./src/assets/img/start-img.svg");
         background-position: center top;
         background-size: cover;
         background-repeat: no-repeat;
