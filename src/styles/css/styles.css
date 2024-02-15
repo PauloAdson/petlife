@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,600');
+
+body {
+    font-size: 100%;
+    font-family: var(--font-family);
+    color: var(--font-color);
+    overflow-x: hidden;
+}
+
+main .inicio {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px 80px 100px 80px;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+    /* display: none; */
+}
+
+.img-responsive {
+   width:50% ; 
+}
+.title{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.paragrafo {
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+
+.button {
+    background-color: var(--secundary);
+    color: #FFFFFF;
+    padding: 16px 32px;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: var(--primary-bg);
+}
+
+.button-transparent {
+    background-color: transparent;
+    color: var(--secundary);
+    padding: 16px 32px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.button-transparent:hover {
+    color: var(--primary-bg);
+}
+
+
+#clinica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clinica {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+}
+
+.clinica li {
+    margin-bottom: 16px;
+    list-style: inside;
+}
+
+.farmacia {
+    padding: 64px 80px;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.farmacia img {
+    margin: 64px auto;
+}
+
+.farmacia .paragrafo img {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.duvidas {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+}
+
+
+h2.doubt-title {
+    font-size: 150%;
+    margin-bottom: 16px;
+}
+
+.doubt h3 {
+    margin-bottom: 16px;
+    border: 2px solid var(--secundary);
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px;
+}
+
+.doubt {
+    position: relative;
+}
+
+.doubt img {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+}
+
+.doubt .paragrafo {
+    border-right: 1px solid var(--secundary);
+    border-bottom: 1px solid var(--secundary);
+    border-left: 1px solid var(--secundary);
+    border-radius: 0 0 8px 8px;
+    margin-top: -22px;
+
+    /* atributos para esconder o paragrafo*/
+    padding: 0 24px;
+
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+
+    transition: .2s ease;
+}
+
+/* Classes que trabalham juntamente do JS */
+.doubt.ativa .paragrafo {
+    height: fit-content;
+    opacity: 1;
+    padding: 24px;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.up-arrow {
+    transform: rotate(180deg);
+}
+
+.footer-responsive {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 64px 80px;
+}
+
+footer {
+    background-color: rgba(255, 152, 108, 0.25);
+}
+
+
+footer img,
+footer .titulo {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+footer div nav a {
+    color: var(--font-color);
+    display: block;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: var(--secundary);
+    display: block;
+    margin-bottom: 16px;
+    text-decoration: underline;
+}
+
+footer p a {
+    color: #263138;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: var(--secundary);
+    text-decoration: underline;
+}
+
+footer p {
+    margin-bottom: 16px;
+    max-width: 350px;
+}
+
+.copyright {
+    background-color: var(--font-color);
+    padding: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.copyright a {
+    color: var(--secundary);
+}
+
+.copyright a:hover {
+    color: var(--primary-bg);
+}

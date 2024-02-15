@@ -1,0 +1,279 @@
+/* Responsividade para botões em desktop */
+@media screen and (min-width: 1000px) {
+    .none-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1127px) {
+
+    .container .flex-btn {
+        display: flex;
+    }
+
+    .container .flex-btn .button {
+        padding: 16px;
+    }
+
+    .container .flex-btn .button-transparent {
+        padding: 16px;
+    }
+}
+
+/* Responsividade para tablets e smartphones */
+@media screen and (max-width: 999px) {
+    .none {
+        display: none;
+    }
+
+    div .flex-btn .button-transparent {
+        color: var(--font-colo-clear);
+    }
+
+    div .flex-btn .button-transparent:hover {
+        color: var(--primary-bg);
+    }
+}
+
+/* Responsividade para Tablets */
+@media screen and (min-width: 768px) and (max-width: 999px) {
+.none-tablet {
+    display: none;
+}
+
+    main .inicio {
+        height: 90vh;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    main .inicio::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("/src/assets/img/start-img.svg");
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: brightness(80%) blur(3px);
+        z-index: -2;
+    }
+
+    .background-container {
+        position: relative;
+    }
+
+    .background-container::after {
+        content: "";
+        padding-bottom: 3rem;
+        border-radius: 12px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--bg-inicio);
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        /* filter: blur(5px); */
+        z-index: -2;
+    }
+
+    .background-container .container {
+        margin-top: 2rem;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .container h1 {
+        color: var(--font-colo-clear);
+    }
+
+    .container p {
+        color: var(--font-colo-clear);
+    }
+
+    /* Seção da clínica */
+    main .clinica {
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .clinica div .responsive {
+        display: flex;
+        align-items: center;
+    }
+
+    .clinica div h2 {
+        margin-bottom: 24px;
+    }
+
+    .clinica div .paragrafo {
+        margin-bottom: 8px;
+    }
+
+    .responsive ul {
+        text-align: left;
+        margin-top: 12px;
+    }
+
+    /* Seção Farmacia */
+    .farmacia .img-responsive {
+        width: 60%;
+        margin: 16px auto;
+    }
+
+    /* Seção Duvidas */
+    #duvidas {
+        padding-top: 32px;
+    }
+
+    .duvidas div h2 {
+        text-align: center;
+    }
+
+    footer .footer-responsive {
+        padding: 64px 0;
+    }
+}
+
+
+
+
+/* Responsividade para Smartphones */
+@media screen and (max-width: 767px) {
+
+    .none {
+        display: none;
+    }
+
+    main #inicio {
+        height: 90vh;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        text-align: center;
+        padding: 0 12px 100px 12px;
+    }
+
+    main #inicio::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("/src/assets/img/start-img.svg");
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: brightness(80%) blur(3px);
+        z-index: -2;
+    }
+
+    .background-container {
+        position: relative;
+    }
+
+    .background-container::after {
+        content: "";
+        padding-bottom: 3rem;
+        border-radius: 12px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--bg-inicio);
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        z-index: -2;
+    }
+
+    .background-container .container {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section div .container {
+        width: 100%;
+    }
+
+    .container h1 {
+        color: var(--font-colo-clear);
+        margin-bottom: 32px;
+    }
+
+    .container p {
+        color: var(--font-colo-clear);
+    }
+
+    .container .flex-btn {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    main #clinica {
+     position: relative;
+     width: 100%;
+     padding: 0;
+     text-align: center;
+     background-color: var(--bg-mobile-clear);
+    }
+    
+    main #clinica .absolute-wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+    }
+
+    div .mobile {
+        padding: 0 12px 38px;
+    }
+
+    #clinica h2 {
+        margin-bottom: 18px;
+    }
+    
+    #clinica div .responsive ul {
+    text-align: justify;
+    }
+
+    .wave-clinica-bottom {
+        width: 100%;
+        height: 9%;
+    
+    }
+
+    .none-mobile {
+        display: none;
+    }
+
+    main #farmacia {
+        padding: 32px 12px 0 12px;
+    }
+    #farmacia img {
+        width: 100%;
+        margin: 32px 0;
+    }
+}

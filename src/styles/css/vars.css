@@ -1,0 +1,14 @@
+:root {
+    --secundary: #FF725E;
+    --primary-bg: #FF9A6C;
+    --secundary-bg: #ffffff;
+    --bg-mobile-clear: #ffe6da;
+    
+    --bg-inicio: rgba(35, 50, 78, 0.75);
+
+    /* FONTE */
+    --font-color-menu: #FFFFFF;
+    --font-color: #263138;
+    --font-colo-clear: #FFFFFF;
+    --font-family: "Roboto", sans-serif;
+}
