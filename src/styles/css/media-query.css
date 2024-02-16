@@ -144,6 +144,10 @@
     footer .footer-responsive {
         padding: 64px 0;
     }
+
+    h3 {
+        padding: 24px 12px;
+    }
 }
 
 
