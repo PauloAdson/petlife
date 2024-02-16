@@ -156,6 +156,10 @@
         display: none;
     }
 
+    h2 {
+        text-align: center;
+    }
+
     main #inicio {
         height: 90vh;
         position: relative;
@@ -238,12 +242,16 @@
      padding: 0;
      text-align: center;
      background-color: var(--bg-mobile-clear);
+     padding: 0;
     }
     
-    main #clinica .absolute-wave {
+.absolute-wave {
         position: absolute;
         bottom: 0;
         left: 0;
+        right: 0;
+        margin-bottom: -1px;
+        width: 100%;
 
     }
 
@@ -269,11 +277,17 @@
         display: none;
     }
 
+    /* Seção farmacia */
     main #farmacia {
         padding: 32px 12px 0 12px;
     }
     #farmacia img {
         width: 100%;
         margin: 32px 0;
+    }
+
+    /* Seção Duvidas */
+    #duvidas {
+        padding: 0 12px;
     }
 }
