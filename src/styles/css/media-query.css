@@ -263,9 +263,7 @@
         margin-bottom: 18px;
     }
     
-    #clinica div .responsive ul {
-    text-align: justify;
-    }
+ 
 
     .wave-clinica-bottom {
         width: 100%;
@@ -290,4 +288,11 @@
     #duvidas {
         padding: 0 12px;
     }
+   footer .footer-responsive{
+    padding: 64px 12px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+
+   }
 }
