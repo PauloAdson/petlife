@@ -163,7 +163,7 @@ h2.doubt-title {
     display: flex;
     justify-content: space-between;
     gap: 80px;
-    padding: 64px 80px;
+    padding: 64px 12px;
 }
 
 footer {
